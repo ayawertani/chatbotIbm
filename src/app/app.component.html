@@ -1,0 +1,9 @@
+<h1> Apprentissage Chatbot IBM</h1>
+<form #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)"> 
+<select>
+  <option *ngFor="let n of d">{{n}} </option>
+</select> <br> <br> 
+<input type="text" name="question" ngModel placeholder="Question"> <br> <br> 
+<input type="text" name="reponse" ngModel placeholder="Reponse"> <br> <br> 
+<button type ="submit"> Submit </button>
+</form>
