@@ -1,9 +1,17 @@
-<h1> Apprentissage Chatbot IBM</h1>
-<form #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)"> 
-<select>
-  <option *ngFor="let n of d">{{n}} </option>
-</select> <br> <br> 
-<input type="text" name="question" ngModel placeholder="Question"> <br> <br> 
-<input type="text" name="reponse" ngModel placeholder="Reponse"> <br> <br> 
-<button type ="submit"> Submit </button>
+<h1 style="text-align: center;"> Apprentissage Chatbot IBM</h1>
+<br><br>
+<form #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)" style="padding: 1%;">
+  <div class="form-group">
+    <h4>Select a dictionnary</h4>
+    <select class="form-control">
+      <option *ngFor="let n of d">{{n}} </option>
+    </select> <br> <br>
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" name="question" ngModel placeholder="Question"> <br> <br> 
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" name="reponse" ngModel placeholder="Reponse"> <br> <br>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
 </form>
